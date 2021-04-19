@@ -1,3 +1,35 @@
-// html {
-//     font-size: 62.5%;
-// }
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: $black;
+    font-size: 2rem;
+}
+
+h1,
+h2,
+h3,
+nav a,
+button {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+}
+
+footer {
+    color: $white;
+}
+
+h1 {
+    font-size: 13.8rem;
+}
+
+.blogH1,
+.contactH1 {
+    font-size: 8rem;
+    line-height: 9.2rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
