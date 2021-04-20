@@ -1,9 +1,5 @@
-// flex mixin
-// display: flex;
-// flex direction
-// justify content
-// align items
-
-// grid
-
-// font styles
+@mixin grid($columns, $rows)  {
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+}

@@ -11,31 +11,49 @@
 <body>
 
     <header class="contactHeader">
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-        <h1 class="contactH1">Get In Touch</h1>
+            <h1 class="contactH1">Get In Touch</h1>
+        </div>
     </header>
 
     <main>
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-whatsapp"></i>
-        <h3 class="email">info@email.com</h3>
-        <p>123 - 456 - 7890</p>
-        <p>123 Queen Street West, Unit 10</p>
-        <p>Toronto, Ontario</p>
-        <p>M5V2D5</p>
+        <div class="wrapper">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-whatsapp"></i>
+            <h3 class="email">info@email.com</h3>
+            <p>123 - 456 - 7890</p>
+            <p>123 Queen Street West, Unit 10</p>
+            <p>Toronto, Ontario</p>
+            <p>M5V2D5</p>
 
-        <label for="userMessage" class="sr-only">Enter your message:</label>
-        <textarea name="userMessage" id="userMessage" class="messageBox input" placeholder="Message" cols="100" rows="10"></textarea>
+            <div class="contactForm">
+                <form action="#" method="#" class="commentForm" name="commentForm">
+                
+                    <label for="userName" class="sr-only">Enter your name:</label>
+                    <input type="text" id="userName" name="userName" class="nameBox input" placeholder="Name">
+                
+                    <label for="userEmail" class="sr-only">Enter your email:</label>
+                    <input type="email" id="userEmail" name="userEmail" class="emailBox input" placeholder="Email address">
+                
+                    <label for="userMessage" class="sr-only">Enter your message:</label>
+                    <textarea name="userMessage" id="userMessage" class="messageBox input" placeholder="Message" cols="100" rows="10"></textarea>
+                
+                    <button>Submit</button>
+                
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer>

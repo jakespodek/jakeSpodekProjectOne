@@ -273,6 +273,103 @@ html {
   padding: 20vh 10vw;
 }
 
+.section2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.section2Text {
+  padding: 100px;
+}
+
+.newGear {
+  text-align: right;
+}
+
+.newGear ~ div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.section3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.section3 div {
+  padding: 5rem;
+}
+
+.section3 h3 {
+  position: relative;
+}
+
+.section3 h3::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2.2rem;
+  position: absolute;
+  z-index: 2;
+  left: -5.5rem;
+}
+
+.section3 .homeIcon1::before {
+  content: "\f030";
+}
+
+.section3 .homeIcon2::before {
+  content: "\f0c0";
+}
+
+.section3 .homeIcon3::before {
+  content: "\f15b";
+}
+
+.section3 .homeIcon4::before {
+  content: "\f095";
+}
+
+.section3 h3::after {
+  content: "";
+  background-color: #4CEEA7;
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -1rem;
+  left: -6.5rem;
+  z-index: 1;
+}
+
+.section3 i {
+  background: #4CEEA7;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: none;
+}
+
+.banner {
+  background-image: url(../assets/banner.jpg);
+  background-position: center;
+  height: 500px;
+  background-repeat: no-repeat;
+  max-width: 1300px;
+}
+
 .blogHeader {
   background-image: url(../assets/blog-header.jpg);
 }
@@ -349,6 +446,7 @@ footer {
 footer p {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 body {
