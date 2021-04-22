@@ -49,3 +49,32 @@
         }
     }
 }
+
+// MEDIA QUERIES
+
+@media (max-width: 1500px) {
+    .contactMain {
+        flex-direction: column;
+        h3 {
+            padding-top: 8rem;
+        }
+    }
+    .contactForm {
+        position: static;
+    }
+}
+
+@media (max-width: 500px) {
+    .contactHeader {
+        background: $white;
+        height: 450px;
+        a {
+            font-size: 1.5rem;
+            justify-content: center;
+        }
+    }
+    .contactMain {
+        padding: 5.5rem 0;
+    }
+    
+}

@@ -595,6 +595,10 @@ html {
   }
 }
 
+.blogBody {
+  background: #EFFDF3;
+}
+
 .blogHeader {
   background-image: url(../assets/blog-header.jpg);
   background-size: cover;
@@ -699,6 +703,74 @@ html {
   margin-left: 11rem;
 }
 
+@media (max-width: 1535px) {
+  .blogMain .articleImg {
+    width: 573px;
+    height: 388px;
+    top: 40rem;
+  }
+  .blogMain article {
+    padding-top: 2rem;
+    padding-left: 6rem;
+    margin-top: 21rem;
+    margin-left: 17rem;
+  }
+  textarea {
+    height: 150px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .blogMain {
+    height: 2700px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .blogMain {
+    height: 2900px;
+    display: block;
+  }
+  .blogMain .articleImg {
+    width: 344px;
+    height: 233px;
+    top: 40rem;
+    left: 50rem;
+  }
+  .blogMain article {
+    padding-top: 0;
+    margin-top: 15rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .blogMain {
+    height: 2400px;
+  }
+  .blogMain .articleImg {
+    left: 25rem;
+  }
+  aside {
+    display: none;
+  }
+}
+
+@media (max-width: 810px) {
+  .blogHeader {
+    height: 300px;
+  }
+  .blogHeader h1 {
+    padding-top: 4vh;
+  }
+  .blogMain .articleImg {
+    display: none;
+  }
+  .blogMain article {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
 .contactHeader {
   background-image: url(../assets/contact-header.jpg);
   background-size: cover;
@@ -758,6 +830,37 @@ html {
 .contactMain .contactForm .emailBox,
 .contactMain .contactForm .messageBox {
   background-color: #FAFAFA;
+}
+
+@media (max-width: 1500px) {
+  .contactMain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactMain h3 {
+    padding-top: 8rem;
+  }
+  .contactForm {
+    position: static;
+  }
+}
+
+@media (max-width: 500px) {
+  .contactHeader {
+    background: #FAFAFA;
+    height: 450px;
+  }
+  .contactHeader a {
+    font-size: 1.5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contactMain {
+    padding: 5.5rem 0;
+  }
 }
 
 html {
@@ -930,4 +1033,9 @@ form .messageBox {
   -ms-flex-line-pack: center;
       align-content: center;
   border: 2px solid #4CEEA7;
+}
+
+footer {
+  padding: 10px;
+  margin-top: 20px;
 }
