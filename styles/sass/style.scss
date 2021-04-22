@@ -42,3 +42,38 @@ button {
     border: none;
     padding: 5px 10px;
 }
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    button {
+        width: 100%;
+    }
+    .nameBox,
+    .emailBox,
+    .messageBox {
+        padding: 20px;
+        background-color: $ice;
+    }
+    .nameBox,
+    .emailBox {
+        width: calc((100% - 30px) / 2);
+        border: none;
+        border-bottom: 2px solid $seaGreen;
+    }
+    .nameBox {
+    margin-right: 15px;
+    }
+    .emailBox {
+        margin-left: 15px;
+    }
+    .messageBox {
+        width: 100%;
+        display: block;
+        margin: 30px 0;
+        align-content: center;
+        border: 2px solid $seaGreen;
+    }
+}

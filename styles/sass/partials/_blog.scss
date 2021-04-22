@@ -1,3 +1,53 @@
+// HEADER
+
 .blogHeader {
     background-image: url(../assets/blog-header.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 578px;
+    h1 {
+        padding-top: 10vh;
+    }
 }
+
+// MAIN
+
+.blogSideImg {
+    width: 513px;
+    height: 433px;
+    img {
+        width: 100%;
+        height: 100%;
+        box-shadow: 1.5rem 1.5rem 0 0 $white;
+    }
+}
+
+.blogSideText {
+    background: $white;
+}
+
+.blogMain {
+    // display: flex;
+    // @include grid(1fr 4fr, 1fr 1000px);
+    // .blogMainContent {
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+    .articleImg {
+        margin-left: 200px;
+        box-shadow: -3rem 3rem 0 0 $canary;
+    }
+    article {
+        border-bottom: 5px solid $canary;
+        border-left: 5px solid $canary;
+    }
+    
+}
+
+// .comments {
+//     display: none;
+// }
+
+// form {
+//     display: none;
+// }
