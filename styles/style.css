@@ -457,6 +457,7 @@ html {
   background-size: cover;
   width: 100%;
   height: 578px;
+  position: relative;
 }
 
 .blogHeader h1 {
@@ -466,6 +467,7 @@ html {
 .blogSideImg {
   width: 513px;
   height: 433px;
+  margin-top: 100px;
 }
 
 .blogSideImg img {
@@ -477,17 +479,81 @@ html {
 
 .blogSideText {
   background: #FAFAFA;
+  padding: 1.5rem;
+}
+
+.blogMain {
+  height: 2500px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% 65%;
+      grid-template-columns: 35% 65%;
+  -ms-grid-rows: 233px 200px 200px 200px 200px 200px 200px 200px 200px 200px;
+      grid-template-rows: 233px 200px 200px 200px 200px 200px 200px 200px 200px 200px;
+      grid-template-areas: "as ar" "as ar" "as ar" "as ar" ". co" ". co" ". co" ". fo" ". fo";
+}
+
+.blogMain aside {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  grid-area: as;
+}
+
+.blogMain a {
+  text-decoration: none;
+  color: #2C2C2C;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .blogMain .articleImg {
   margin-left: 200px;
-  -webkit-box-shadow: -3rem 3rem 0 0 #FDFA69;
-          box-shadow: -3rem 3rem 0 0 #FDFA69;
+  -webkit-box-shadow: -3rem 4rem 0 0 #FDFA69;
+          box-shadow: -3rem 4rem 0 0 #FDFA69;
+  position: absolute;
+  top: 31rem;
 }
 
 .blogMain article {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 2;
+  grid-area: ar;
   border-bottom: 5px solid #FDFA69;
   border-left: 5px solid #FDFA69;
+  width: 70%;
+  padding-top: 2rem;
+  padding-left: 4rem;
+  margin-top: 400px;
+}
+
+.blogMain .comments {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: co;
+  width: 70%;
+}
+
+.blogMain .comments .comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blogMain .comments img {
+  height: 50%;
+  margin: 3rem 3rem 0 0;
+}
+
+.blogMain form {
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: fo;
+  width: 70%;
+  margin-left: 11rem;
 }
 
 .contactHeader {
@@ -644,6 +710,7 @@ form {
 
 form button {
   width: 100%;
+  cursor: pointer;
 }
 
 form .nameBox,

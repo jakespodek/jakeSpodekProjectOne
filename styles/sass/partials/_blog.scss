@@ -5,6 +5,7 @@
     background-size: cover;
     width: 100%;
     height: 578px;
+    position: relative;
     h1 {
         padding-top: 10vh;
     }
@@ -15,6 +16,7 @@
 .blogSideImg {
     width: 513px;
     height: 433px;
+    margin-top: 100px;
     img {
         width: 100%;
         height: 100%;
@@ -24,30 +26,61 @@
 
 .blogSideText {
     background: $white;
+    padding: 1.5rem;
 }
 
 .blogMain {
-    // display: flex;
-    // @include grid(1fr 4fr, 1fr 1000px);
-    // .blogMainContent {
-    //     display: flex;
-    //     flex-direction: column;
-    // }
+    height: 2500px;
+    @include grid(35% 65%, 233px 200px 200px 200px 200px 200px 200px 200px 200px 200px);
+    grid-template-areas:
+     "as ar"
+     "as ar"
+     "as ar"
+     "as ar"
+     ". co"
+     ". co"
+     ". co"
+     ". fo"
+     ". fo";
+    aside {
+        grid-area: as;
+    }
+    a {
+        text-decoration: none;
+        color: $black;
+        font-weight: bold;
+        font-style: italic;
+    }
     .articleImg {
         margin-left: 200px;
-        box-shadow: -3rem 3rem 0 0 $canary;
+        box-shadow: -3rem 4rem 0 0 $canary;
+        position: absolute;
+        top: 31rem;
     }
     article {
+        grid-area: ar;
         border-bottom: 5px solid $canary;
         border-left: 5px solid $canary;
+        width: 70%;
+        padding-top: 2rem;
+        padding-left: 4rem;
+        margin-top: 400px;
+    }
+    .comments {
+        grid-area: co;
+        width: 70%;
+        .comment {
+            display: flex;
+        }
+        img {
+            height: 50%;
+            margin: 3rem 3rem 0 0;
+        }
+    }
+    form {
+        grid-area: fo;
+        width: 70%;
+        margin-left: 11rem;
     }
     
 }
-
-// .comments {
-//     display: none;
-// }
-
-// form {
-//     display: none;
-// }
